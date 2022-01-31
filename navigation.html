@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+    
+header{
+    font-weight: bolder;
+    color: black;
+    font-size: xx-large;
+    text-align: right;
+    padding: 25px;
+    background-color: red;
+    padding-right: 50px;
+}
+section{
+    background-color: gray;
+}
+.dropbtn {
+  background-color: gray;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: dodgerblue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: none;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}
+
+    </style>
+
+</head>
+<body>
+    <header>Demo for Dropdown</header>
+    <section> 
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Link 1</button>
+                </div>
+            <div class="dropdown">
+                <button class="dropbtn">Link 2</button>
+                <div class="dropdown-content">
+                  <a href="#">DD_Link_1</a>
+                  <a href="#">DD_Link_2</a>
+                  <a href="#">DD_Link_3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Link 3</button>
+                <div class="dropdown-content">
+                  <a href="#">DD_Link_1</a>
+                  <a href="#">DD_Link_2</a>
+                  <a href="#">DD_Link_3</a>
+                </div>
+              </div>
+        </nav>
+</section>
+</body>
+</html>
